@@ -11,7 +11,7 @@ jobs:
           name: Show current branch
           command: echo ${CURRENT_BRANCH}
       - restore_cache:
-          key:
+          keys:
             - app-{{checksum "package.json"}}
             - app-
       - run:
@@ -118,4 +118,3 @@ workflows:
                 - develop
                 - staging
                 - master
-                
