@@ -18,7 +18,7 @@ const App = () => {
         >
           First edit on App
         </a>
-        <p>test modification</p>
+        <p>Factorize circleci config</p>
       </header>
     </div>
   );
