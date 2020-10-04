@@ -49,10 +49,10 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "eslint --fix ."
+      "yarn lint:fix"
     ],
     "*.{js,json,css,md}": [
-      "prettier --write",
+      "yarn prettier:write",
       "git add"
     ]
   },
