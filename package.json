@@ -43,6 +43,20 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.21.3",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
     "prettier": "^2.1.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix ."
+    ],
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "pre-commit": "lint-staged"
   }
 }
